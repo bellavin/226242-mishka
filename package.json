@@ -5,6 +5,9 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -19,5 +22,16 @@
   ],
   "engines": {
     "node": "8.2"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bellavindm/226241-mishka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bellavindm/226241-mishka/issues"
+  },
+  "homepage": "https://github.com/bellavindm/226241-mishka#readme"
 }
