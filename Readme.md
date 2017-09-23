@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Беллавин](https://up.htmlacademy.ru/adaptive/12/user/226241).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Мачехин](https://htmlacademy.ru/profile/id166029).
 
 ---
 
