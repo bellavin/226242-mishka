@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Academy: Мишка</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="main-header">
+		<section class="main-header__top top-menu">
+			<div class="top-menu__logo"></div>
+			<div class="top-menu__catalog">Каталог товаров</div>
+			<div class="top-menu__order">Вязание на заказ</div>
+			<div class="top-menu__search">Поиск по сайту</div>
+			<div class="top-menu__cart">Корзина: пока пуста</div>
+		</section>
+		<section class="main-header__middle">
+			<h1 class="main-header__main-heading">
+				Каталог
+			</h1>
+		</section>
+	</header>
+	<main class="catalog">
+		<section class="catalog__items">
+			<div class="catalog__item">
+				<img src="#" alt="Изображение зайчика">
+				<h4 class="catalog__item-heading">Зайчик-попрыгайчик</h4>
+				<p class="catalog__item-description">Рост 30 см, вес 200 г</p>
+				<div class="catalog__price">1 200 руб.</div>
+			</div>
+			<div class="catalog__item">
+				<img src="#" alt="Изображение зайчика">
+				<h4 class="catalog__item-heading">Корзинка для белья</h4>
+				<p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
+				<div class="catalog__price">690 руб.</div>
+			</div>
+			<div class="catalog__item">
+				<img src="#" alt="Изображение зайчика">
+				<h4 class="catalog__item-heading">Большая корзинка для игрушек</h4>
+				<p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
+				<div class="catalog__price">1 500 руб.</div>
+			</div>
+		</section>
+		<section class="catalog__video">
+			<h4 class="catalog__item-heading catalog__video-heading">Процесс производства</h4>
+			<img src="" alt="Видео">
+			<div class="catalog__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+			</div>
+			<form class="catalog__make-order" action="https://echo.htmlacademy.ru" method="post">
+				<button type="submit" class="catalog__btn btn">Сделать заказ</button>
+			</form>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<section class="main-footer__social">
+			<a href="#" class="main-footer__vk"><!--SVG--></a>
+			<a href="#" class="main-footer__fb"><!--SVG--></a>
+			<a href="#" class="main-footer__twitter"><!--SVG--></a>
+		</section>
+		<section class="main-footer__developer">
+			<a href="#" class="developer">
+				Разработано
+				<!--SVG-->
+			</a>
+		</section>
+	</footer>
+
+	<!--liveReload-->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
