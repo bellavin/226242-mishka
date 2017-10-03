@@ -8,50 +8,50 @@
 <body>
 	<header class="main-header">
 		<section class="main-header__top top-menu">
-			<div class="top-menu__logo"></div>
-			<div class="top-menu__catalog">Каталог товаров</div>
-			<div class="top-menu__order">Вязание на заказ</div>
-			<div class="top-menu__search">Поиск по сайту</div>
-			<div class="top-menu__cart">Корзина: пока пуста</div>
+			<a href="#" class="top-menu__logo"></a>
+			<a href="#" class="top-menu__catalog">Каталог товаров</a>
+			<a href="#" class="top-menu__order">Вязание на заказ</a>
+			<a href="#" class="top-menu__search">Поиск по сайту</a>
+			<a href="#" class="top-menu__cart">Корзина: пока пуста</a>
 		</section>
-		<section class="main-header__middle">
+		<section class="main-header__bottom">
 			<h1 class="main-header__main-heading">
 				Милые штуки ручной работы для дома
 			</h1>
 		</section>
-		<section class="main-header__bottom catalog-links">
-			<a href="#" class="catalog-links__interior-catalog">Предметы интерьера</a>
-			<a href="#" class="catalog-links__toys-catalog">Детские игрушки</a>
-		</section>
 	</header>
 	<main class="main-content">
+			<section class="main-content__catalog-links catalog-links">
+				<a href="#" class="catalog-links__interior-catalog">Предметы интерьера</a>
+				<a href="#" class="catalog-links__toys-catalog">Детские игрушки</a>
+		</section>
 		<section class="main-content__featured featured">
-			<h2 class="featured__heading2 heading2">Вязаные корзинки</h2>
-			<h3 class="featured__goods-of-the-week">Товар недели</h3>
+			<h2 class="featured__heading heading2">Вязаные корзинки</h2>
+			<h3 class="featured__goods">Товар недели</h3>
 			<p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
 			</p>
-			<table class="featured__table table">
-				<tr class="featured-table__col featured-table__col1">
+			<table class="featured__table">
+				<tr class="featured-table__col">
 					<td>Цвет:</td>
 					<td>«Тиффани»/серый</td>
 				</tr>
-				<tr class="featured-table__col featured-table__col2">
+				<tr class="featured-table__col">
 					<td>Диаметр:</td>
 					<td>25 см</td>
 				</tr>
-				<tr class="featured-table__col featured-table__col3">
+				<tr class="featured-table__col">
 					<td>Высота:</td>
 					<td>15 см</td>
 				</tr>
 			</table>
-			<img src="" alt="Изображение вязаных корзинок">
+			<a href="#">
+				<img src="#" alt="Изображение вязаных корзинок">
+			</a>
 			<span class="featured__price">Цена: 990 руб.</span>
-			<form class="featured__make-order" action="https://echo.htmlacademy.ru" method="post">
-				<button type="submit" class="featured__btn btn">Заказать</button>
-			</form>
+				<a href="#" class="featured__btn btn">Заказать</a>
 		</section>
 		<section class="main-content__about-us about-us">
-			<h2 class="about-us__heading2 heading2">Коротко о нас:</h2>
+			<h2 class="about-us__heading heading2">Коротко о нас:</h2>
 			<ul class="about-us__items">
 				<li class="about-us__item">
 					<!--SVG-->
@@ -80,26 +80,28 @@
 			</ul>
 		</section>
 		<section class="comments">
-			<h2 class="comments__heading2 heading2">Отзывы</h2>
+			<h2 class="comments__heading heading2">Отзывы</h2>
 			<blockquote class="comments__text">
 				Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
 			</blockquote>
 			<cite class="comments__author">Анастасия Красильникова</cite>
 			<a href="#" class="comments__author-mail">@misssssiskras</a>
-			<input type="radio" name="comments-radio" id="comments-radio1" class="comments__toggle">
-			<label for="comments-radio1"></label>
-			<input type="radio" name="comments-radio" id="comments-radio2" class="comments__toggle">
-			<label for="comments-radio2"></label>
+			<div class="comments__toggles">
+				<input type="radio" name="comments-radio" id="comments-radio1" class="comments__toggle">
+				<label for="comments-radio1"></label>
+				<input type="radio" name="comments-radio" id="comments-radio2" class="comments__toggle">
+				<label for="comments-radio2"></label>
+			</div>
 			<button class="featured__btn btn" type="submit">Написать</button>
 		</section>
 		<section class="information">
-			<h2 class="information__heading2 heading2">Контакты</h2>
-			<table class="information__table table">
-				<tr class="information-table__col information-table__col1">
+			<h2 class="information__heading heading2">Контакты</h2>
+			<table class="information__table">
+				<tr class="information-table__col">
 					<td>e-mail:</td>
 					<td>info@mimimishkashop.ru</td>
 				</tr>
-				<tr class="information-table__col information-table__col2">
+				<tr class="information-table__col">
 					<td>адрес:</td>
 					<td>
 						г. Санкт-Петербург,
@@ -109,7 +111,7 @@
 				</tr>
 			</table>
 			<div class="information__map"></div>
-			<button class="information__btn btn" type="submit">Напишите нам</button>
+			<a href="#" class="information__btn btn" type="submit">Напишите нам</a>
 		</section>
 	</main>
 	<footer class="main-footer">
@@ -125,6 +127,21 @@
 			</a>
 		</section>
 	</footer>
+
+	<section class="modal">
+		<h2 class="modal__heading heading2">Добавить в корзину</h2>
+		<p class="modal__text">Выберите размер:</p>
+		<div class="modal__size">
+			<input type="radio" id="modal__radio1" name="modal__radio" checked>
+			<label for="modal__radio1">S</label>
+			<input type="radio" id="modal__radio2" name="modal__radio">
+			<label for="modal__radio2">М</label>
+			<input type="radio" id="modal__radio3" name="modal__radio">
+			<label for="modal__radio3">L</label>
+		</div>
+		<a href="#" class="modal__make-order">Добавить</a>
+		<button class="modal__close" type="button"></button>
+	</section>
 
 	<!--liveReload-->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

@@ -8,11 +8,11 @@
 <body>
 	<header class="main-header">
 		<section class="main-header__top top-menu">
-			<div class="top-menu__logo"></div>
-			<div class="top-menu__catalog">Каталог товаров</div>
-			<div class="top-menu__order">Вязание на заказ</div>
-			<div class="top-menu__search">Поиск по сайту</div>
-			<div class="top-menu__cart">Корзина: пока пуста</div>
+			<a href="#" class="top-menu__logo"></a>
+			<a href="#" class="top-menu__catalog">Каталог товаров</a>
+			<a href="#" class="top-menu__order">Вязание на заказ</a>
+			<a href="#" class="top-menu__search">Поиск по сайту</a>
+			<a href="#" class="top-menu__cart">Корзина: пока пуста</a>
 		</section>
 		<section class="main-header__middle">
 			<h1 class="main-header__main-heading">
@@ -23,22 +23,28 @@
 	<main class="catalog">
 		<section class="catalog__items">
 			<div class="catalog__item">
-				<img src="#" alt="Изображение зайчика">
-				<h4 class="catalog__item-heading">Зайчик-попрыгайчик</h4>
-				<p class="catalog__item-description">Рост 30 см, вес 200 г</p>
-				<div class="catalog__price">1 200 руб.</div>
+				<a href="#">
+					<img src="#" alt="Изображение зайчика">
+					<h4 class="catalog__item-heading">Зайчик-попрыгайчик</h4>
+					<p class="catalog__item-description">Рост 30 см, вес 200 г</p>
+					<div class="catalog__price">1 200 руб.</div>
+				</a>
 			</div>
 			<div class="catalog__item">
-				<img src="#" alt="Изображение зайчика">
-				<h4 class="catalog__item-heading">Корзинка для белья</h4>
-				<p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
-				<div class="catalog__price">690 руб.</div>
+				<a href="#">
+					<img src="#" alt="Изображение зайчика">
+					<h4 class="catalog__item-heading">Корзинка для белья</h4>
+					<p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
+					<div class="catalog__price">690 руб.</div>
+				</a>
 			</div>
 			<div class="catalog__item">
-				<img src="#" alt="Изображение зайчика">
-				<h4 class="catalog__item-heading">Большая корзинка для игрушек</h4>
-				<p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
-				<div class="catalog__price">1 500 руб.</div>
+				<a href="#">
+					<img src="#" alt="Изображение зайчика">
+					<h4 class="catalog__item-heading">Большая корзинка для игрушек</h4>
+					<p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
+					<div class="catalog__price">1 500 руб.</div>
+				</a>
 			</div>
 		</section>
 		<section class="catalog__video">
@@ -46,9 +52,7 @@
 			<img src="" alt="Видео">
 			<div class="catalog__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
 			</div>
-			<form class="catalog__make-order" action="https://echo.htmlacademy.ru" method="post">
-				<button type="submit" class="catalog__btn btn">Сделать заказ</button>
-			</form>
+			<a href="#" class="catalog__btn btn">Сделать заказ</a>
 		</section>
 	</main>
 	<footer class="main-footer">
@@ -64,6 +68,21 @@
 			</a>
 		</section>
 	</footer>
+
+	<section class="modal">
+		<h2 class="modal__heading heading2">Добавить в корзину</h2>
+		<p class="modal__text">Выберите размер:</p>
+		<div class="modal__size">
+			<input type="radio" id="modal__radio1" name="modal__radio" checked>
+			<label for="modal__radio1">S</label>
+			<input type="radio" id="modal__radio2" name="modal__radio">
+			<label for="modal__radio2">М</label>
+			<input type="radio" id="modal__radio3" name="modal__radio">
+			<label for="modal__radio3">L</label>
+		</div>
+		<a href="#" class="modal__make-order">Добавить</a>
+		<button class="modal__close" type="button"></button>
+	</section>
 
 	<!--liveReload-->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

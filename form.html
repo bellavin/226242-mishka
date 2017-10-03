@@ -8,11 +8,11 @@
 <body>
 	<header class="main-header">
 		<section class="main-header__top top-menu">
-			<div class="top-menu__logo"></div>
-			<div class="top-menu__catalog">Каталог товаров</div>
-			<div class="top-menu__order">Вязание на заказ</div>
-			<div class="top-menu__search">Поиск по сайту</div>
-			<div class="top-menu__cart">Корзина: пока пуста</div>
+			<a href="#" class="top-menu__logo"></a>
+			<a href="#" class="top-menu__catalog">Каталог товаров</a>
+			<a href="#" class="top-menu__order">Вязание на заказ</a>
+			<a href="#" class="top-menu__search">Поиск по сайту</a>
+			<a href="#" class="top-menu__cart">Корзина: пока пуста</a>
 		</section>
 		<section class="main-header__middle">
 			<h1 class="main-header__main-heading">
@@ -25,41 +25,44 @@
 			Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
 		</p>
 		<form class="main-form___filter" method="get" action="https://echo.htmlacademy.ru">
-			<h3 class="main-form__heading heading3">Тип</h3>
-			<input type="radio" id="main-form__radio1" name="main-form__radio" checked>
-			<label for="main-form__radio1">Аксессуар для интерьера</label>
-			<input type="radio" id="main-form__radio2" name="main-form__radio">
-			<label for="main-form__radio2">Детская игрушка</label>
-
-			<h3 class="main-form__heading heading3">Цвет</h3>
-			<input type="checkbox" id="main-form__checkbox1" name="main-form__checkbox" checked>
-			<label for="main-form__checkbox1">Белый</label>
-			<input type="checkbox" id="main-form__checkbox2" name="main-form__checkbox" checked>
-			<label for="main-form__checkbox2">Серый</label>
-			<input type="checkbox" id="main-form__checkbox3" name="main-form__checkbox">
-			<label for="main-form__checkbox3">«Тиффани»</label>
-			<input type="checkbox" id="main-form__checkbox4" name="main-form__checkbox">
-			<label for="main-form__checkbox4">Черный</label>
-			<input type="checkbox" id="main-form__checkbox5" name="main-form__checkbox">
-			<label for="main-form__checkbox5">Розовый</label>
-
-			<h3 class="main-form__heading heading3">ФИО</h3>
-			<label for="main-form__name">Имя:</label>
-			<input type="text" id ="main-form__name" placeholder="Введите ваше имя*" required>
-			<label for="main-form__surname">Фамилия:</label>
-			<input type="text" id ="main-form__surname" placeholder="Укажите фамилию*" required>
-			<label for="main-form__patronymic">Отчество:</label>
-			<input type="text" id ="main-form__patronymic" placeholder="Отчество, если желаете">
-
-			<h3 class="main-form__heading heading3">Тел</h3>
-			<input type="text" placeholder="+7 ХХХ ХХ ХХ*" required>
-			<h3 class="main-form__heading heading3">e-mail</h3>
-			<input type="text" placeholder="Ваш Email*" required>
-			<h3 class="main-form__heading heading3">Доп</h3>
-			<textarea name="main-form__textarea" cols="24" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-
+			<div class="main-form__radio">
+				<h3 class="main-form__heading heading3">Тип</h3>
+				<input type="radio" id="main-form__radio1" name="main-form__radio" checked>
+				<label for="main-form__radio1">Аксессуар для интерьера</label>
+				<input type="radio" id="main-form__radio2" name="main-form__radio">
+				<label for="main-form__radio2">Детская игрушка</label>
+			</div>
+			<div class="main-form__checkboxes">
+				<h3 class="main-form__heading heading3">Цвет</h3>
+				<input type="checkbox" id="main-form__checkbox1" name="main-form__checkbox" checked>
+				<label for="main-form__checkbox1">Белый</label>
+				<input type="checkbox" id="main-form__checkbox2" name="main-form__checkbox" checked>
+				<label for="main-form__checkbox2">Серый</label>
+				<input type="checkbox" id="main-form__checkbox3" name="main-form__checkbox">
+				<label for="main-form__checkbox3">«Тиффани»</label>
+				<input type="checkbox" id="main-form__checkbox4" name="main-form__checkbox">
+				<label for="main-form__checkbox4">Черный</label>
+				<input type="checkbox" id="main-form__checkbox5" name="main-form__checkbox">
+				<label for="main-form__checkbox5">Розовый</label>
+			</div>
+			<div class="main-form__user">
+				<h3 class="main-form__heading heading3">ФИО</h3>
+				<label for="main-form__name">Имя:</label>
+				<input type="text" id ="main-form__name" placeholder="Введите ваше имя*" required>
+				<label for="main-form__surname">Фамилия:</label>
+				<input type="text" id ="main-form__surname" placeholder="Укажите фамилию*" required>
+				<label for="main-form__patronymic">Отчество:</label>
+				<input type="text" id ="main-form__patronymic" placeholder="Отчество, если желаете">
+			</div>
+			<div class="main-form__information">
+				<h3 class="main-form__heading heading3">Тел</h3>
+				<input type="text" placeholder="+7 ХХХ ХХ ХХ*" required>
+				<h3 class="main-form__heading heading3">e-mail</h3>
+				<input type="text" placeholder="Ваш Email*" required>
+				<h3 class="main-form__heading heading3">Доп</h3>
+				<textarea name="main-form__textarea" cols="24" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+			</div>
 			<p class="main-form__required-text">*Поля обязательны для заполнения</p>
-
 			<button type="submit">Отправить заказ</button>
 		</form>
 	</main>
