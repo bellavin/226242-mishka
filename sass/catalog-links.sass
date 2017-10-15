@@ -1,0 +1,108 @@
+.catalog-links
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+
+
+.catalog-links__item
+	flex-grow: 1;
+	position: relative;
+
+	box-sizing: border-box;
+	// width: 85%;
+	width: 320px;
+	margin: 0 auto;
+	min-height: 103px;
+	padding-top: 25px;
+	padding-left: 30px;
+
+	line-height: 24px;
+	font-size: 19px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+
+.catalog-links__interior-catalog,
+.catalog-links__interior-catalog::before
+	background-color: #63d1bb;
+
+.catalog-links__toys-catalog,
+.catalog-links__toys-catalog::before
+	background-color: #56c3b2;
+
+.catalog-links__icon
+	position: absolute;
+	fill: #149080;
+	opacity: 0.5;
+
+.catalog-links__interior-icon
+	top: 23px;
+	right: 37px;
+
+.catalog-links__toys-icon
+	top: 21px;
+	right: 27px;
+
+.catalog-links__item:hover,
+.catalog-links__item:focus
+	padding-top: 20px;
+
+.catalog-links__item:active
+	color: rgba(255, 255, 255, 0.3);
+
+.catalog-links__item:hover  .catalog-links__interior-icon,
+.catalog-links__item:focus  .catalog-links__interior-icon
+	top: 18px;
+	opacity: 0.7;
+
+.catalog-links__item:hover  .catalog-links__toys-icon,
+.catalog-links__item:focus  .catalog-links__toys-icon
+	top: 16px;
+	opacity: 0.7;
+
+.catalog-links__item:active  .catalog-links__toys-icon,
+.catalog-links__item:active  .catalog-links__interior-icon
+	opacity: 0.3;
+
+.catalog-links__item::before
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0px;
+
+	height: 5px;
+	width: 100%;
+
+.catalog-links__item:hover::before
+	top: -5px;
+
+@media (min-width: $tablet-width)
+	.catalog-links
+		flex-direction: row;
+		max-width: 1050px;
+		min-height: 130px;
+		// margin: 0 auto;
+		margin: 0 40px;
+
+	.catalog-links__item
+		flex-grow: 1;
+		width: 50%;
+		padding-top: 26px;
+		padding-left: 38px;
+
+		line-height: 30px;
+
+	.catalog-links__interior-icon
+		top: 30px;
+		right: 36px;
+
+	.catalog-links__toys-icon
+		top: 32px;
+		right: 33px;
+
+
+@media (min-width: $desktop-width - 100px)
+	.catalog-links
+		min-height: 125px;
+		margin: 0 auto;
+		width: $desktop-width - 200px;

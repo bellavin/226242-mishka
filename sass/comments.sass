@@ -1,0 +1,69 @@
+.comments
+	position: relative;
+	margin-top: 36px;
+	width: 260px;
+
+.comments__text
+	margin-left: 2px;
+	margin-top: 25px;
+	margin-right: 0;
+	font-size: 15px;
+	line-height: 30px;
+
+.comments__author
+	display: block;
+	margin-top: 28px;
+	font-size: 17px;
+	font-weight: bold;
+	font-style: normal;
+
+.comments__author-mail
+	display: block;
+	margin-top: 10px;
+	font-size: 17px;
+	text-decoration: none;
+	color: black;
+
+.comments__radio
+	display: none;
+
+.comments__toggles
+	margin-top: 36px;
+	display: flex;
+
+.comments__toggle
+	box-sizing: border-box;
+	width: 131px;
+	height: 52px;
+	border: 1px solid #ececec;
+	padding-top: 12px;
+	text-align: center;
+	cursor: pointer;
+
+.comments__toggle--right
+	border-left: none;
+
+
+.comments__toggle:hover .comments__arrow,
+.comments__toggle:focus .comments__arrow
+	opacity: 0.6;
+
+.comments__toggle:active .comments__arrow
+	opacity: 0.3;
+
+.comments__btn
+	margin-top: 38px;
+	width: 261px;
+
+.comments::before
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -65px;
+	width: 100%;
+	height: 23px;
+
+	background-image: url("../img/zigzag-line.png");
+	background-repeat: repeat-x;
+	background-size: auto 7px;
+	z-index: 50;

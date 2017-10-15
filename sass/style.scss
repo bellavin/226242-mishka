@@ -1,0 +1,125 @@
+$tablet-width: 768px;
+$desktop-width: 1250px;
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 320px;
+	font-family: "Open Sans", Arial, sans-serif;
+	background-color: white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btn {
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid #444444;
+	padding-top: 14px;
+	padding-bottom: 15px;
+
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #444444;
+
+	background-color: white;
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #444444;
+	color: white;
+}
+
+.btn:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	width: 320px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+	.container {
+		width: $tablet-width;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media (min-width: $desktop-width - 100px) {
+	.container {
+		width: $desktop-width - 200px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.container {
+		width: $desktop-width - 200px;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}
+
+///// Всякие вспомогательные штуки///////////////////////////////////
+// body, a
+// 	color: transparent;
+
+// body
+// 	background: url(../mishka-catalog-mobile.jpg) no-repeat 50% 0;
+
+// @media (min-width: $tablet-width)
+// 	body
+// 		background: url(../mishka-catalog-tablet.jpg) no-repeat 50% 0;
+
+// @media (min-width: $desktop-width - 100px)
+// 	body
+// 		background: url(../mishka-catalog-desktop.jpg) no-repeat 50% 0;
+//////////////////////////////////////////////////////////////////////
+
+
+@import "headings.sass";
+@import "main-nav.sass";
+@import "main-header__wrapper.sass";
+@import "main-header__heading.sass";
+@import "catalog-links.sass";
+@import "featured.sass";
+@import "about-us.sass";
+@import "comments.sass";
+@import "information.sass";
+@import "map.sass";
+@import "main-footer.sass";
+@import "modal.sass";
+@import "catalog.sass";
+@import "main-form.sass";
