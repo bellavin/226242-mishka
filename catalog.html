@@ -7,64 +7,114 @@
 </head>
 <body>
 	<header class="main-header">
-		<section class="main-header__top top-menu">
-			<a href="#" class="top-menu__logo"></a>
-			<a href="#" class="top-menu__catalog">Каталог товаров</a>
-			<a href="#" class="top-menu__order">Вязание на заказ</a>
-			<a href="#" class="top-menu__search">Поиск по сайту</a>
-			<a href="#" class="top-menu__cart">Корзина: пока пуста</a>
-		</section>
-		<section class="main-header__middle">
-			<h1 class="main-header__main-heading">
-				Каталог
-			</h1>
-		</section>
+		<div class="main-header__wrapper">
+			<nav class="main-header__nav main-nav main-nav--opened container">
+				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+				<a href="index.html" class="main-nav__item main-nav__logo">
+					<svg class="main-nav__mobile-logo" width="85.589px" height="35.034px">
+						<use xlink:href="img/sprite.svg#logo-mobile"></use>
+					</svg>
+				</a>
+				<a href="catalog.html" class="main-nav__item main-nav__item--mobile main-nav__catalog">Каталог товаров</a>
+				<a href="form.html" class="main-nav__item main-nav__item--mobile main-nav__order">Вязание на заказ</a>
+				<a href="#" class="main-nav__item main-nav__item--mobile main-nav__search">
+					<svg class="main-nav__search-icon" width="17.6px" height="17.6px">
+						<use xlink:href="img/sprite.svg#search-icon"></use>
+					</svg>
+					<span class="main-nav__heading main-nav__item--tablet-hidden">Поиск по сайту</span>
+				</a>
+				<a href="#" class="main-nav__item main-nav__item--mobile main-nav__cart">
+					<svg class="main-nav__cart-icon" width="20.294px" height="18.849px">
+						<use xlink:href="img/sprite.svg#cart-icon"></use>
+					</svg>
+					Корзина: пока пуста
+				</a>
+				<span class="main-nav__item main-nav__free-delivery">Бесплатная доставка по России</span>
+				<a href="#" class="main-nav__item main-nav__new-goods">Новые поступления</a>
+				<a href="#" class="main-nav__item main-nav__discount">Распродажа</a>
+			</nav>
+			<div class="main-header__heading-wrapper container">
+				<h1 class="main-heading">Каталог товаров</h1>
+			</div>
+		</div>
 	</header>
 	<main class="catalog">
-		<section class="catalog__items">
+		<section class="catalog__items container">
 			<div class="catalog__item">
 				<a href="#">
-					<img src="#" alt="Изображение зайчика">
+					<img src="../img/photo-hare-mobile@1x.jpg" alt="Изображение зайчика">
 					<h4 class="catalog__item-heading">Зайчик-попрыгайчик</h4>
 					<p class="catalog__item-description">Рост 30 см, вес 200 г</p>
-					<div class="catalog__price">1 200 руб.</div>
+				</a>
+				<a href="#" class="catalog__price">
+					1 200 руб.
+					<svg class="catalog__cart-icon" width="20.294px" height="18.849px">
+						<use xlink:href="img/sprite.svg#cart-icon"></use>
+					</svg>
 				</a>
 			</div>
 			<div class="catalog__item">
 				<a href="#">
-					<img src="#" alt="Изображение зайчика">
+					<img src="../img/photo-bowl-mobile@1x.jpg" alt="Изображение зайчика">
 					<h4 class="catalog__item-heading">Корзинка для белья</h4>
 					<p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
-					<div class="catalog__price">690 руб.</div>
+				</a>
+				<a href="#" class="catalog__price">
+					690 руб.
+					<svg class="catalog__cart-icon" width="20.294px" height="18.849px">
+						<use xlink:href="img/sprite.svg#cart-icon"></use>
+					</svg>
 				</a>
 			</div>
 			<div class="catalog__item">
 				<a href="#">
-					<img src="#" alt="Изображение зайчика">
+					<img src="../img/photo-toys-mobile@1x.jpg" alt="Изображение зайчика">
 					<h4 class="catalog__item-heading">Большая корзинка для игрушек</h4>
 					<p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
-					<div class="catalog__price">1 500 руб.</div>
+				</a>
+				<a href="#" class="catalog__price">
+					1 500 руб.
+					<svg class="catalog__cart-icon" width="20.294px" height="18.849px">
+						<use xlink:href="img/sprite.svg#cart-icon"></use>
+					</svg>
 				</a>
 			</div>
 		</section>
-		<section class="catalog__video">
+		<section class="catalog__video container catalog__item">
+			<svg class="catalog__video-icon" width="32px" height="32px">
+				<use xlink:href="img/sprite.svg#cam-icon"></use>
+			</svg>
 			<h4 class="catalog__item-heading catalog__video-heading">Процесс производства</h4>
-			<img src="" alt="Видео">
+			<img src="img/video-mobile@1x.jpg" alt="Видео" class="catalog__video-img">
 			<div class="catalog__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
 			</div>
 			<a href="#" class="catalog__btn btn">Сделать заказ</a>
 		</section>
 	</main>
 	<footer class="main-footer">
-		<section class="main-footer__social">
-			<a href="#" class="main-footer__vk"><!--SVG--></a>
-			<a href="#" class="main-footer__fb"><!--SVG--></a>
-			<a href="#" class="main-footer__twitter"><!--SVG--></a>
+		<section class="main-footer__social container">
+			<a href="#" class="main-footer__insta main-footer__social-item">
+				<svg class="main-footer__insta-icon main-footer__item-icon" width="21.769px" height="21.334px">
+					<use xlink:href="img/sprite.svg#insta-icon"></use>
+				</svg>
+			</a>
+			<a href="#" class="main-footer__fb main-footer__social-item">
+				<svg class="main-footer__fb-icon main-footer__item-icon" width="14.962px" height="27.718px">
+					<use xlink:href="img/sprite.svg#fb-icon"></use>
+				</svg>
+			</a>
+			<a href="#" class="main-footer__twitter main-footer__social-item">
+				<svg class="main-footer__twitter-icon main-footer__item-icon" width="23.494px" height="20.168px">
+					<use xlink:href="img/sprite.svg#twitter-icon"></use>
+				</svg>
+			</a>
 		</section>
-		<section class="main-footer__developer">
-			<a href="#" class="developer">
-				Разработано
-				<!--SVG-->
+		<section class="main-footer__developer container">
+			<a href="#" class="main-footer__developer-link">
+				<span class="main-footer__developer-text">Разработано</span>
+				<svg class="main-footer__developer-icon" width="26.943px" height="34.09px">
+					<use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
+				</svg>
 			</a>
 		</section>
 	</footer>
@@ -73,18 +123,16 @@
 		<h2 class="modal__heading heading2">Добавить в корзину</h2>
 		<p class="modal__text">Выберите размер:</p>
 		<div class="modal__size">
-			<input type="radio" id="modal__radio1" name="modal__radio" checked>
-			<label for="modal__radio1">S</label>
-			<input type="radio" id="modal__radio2" name="modal__radio">
-			<label for="modal__radio2">М</label>
-			<input type="radio" id="modal__radio3" name="modal__radio">
-			<label for="modal__radio3">L</label>
+			<input type="radio" id="modal__radio1" name="modal__radio" class="modal__radio1" checked>
+			<label for="modal__radio1" class="modal__label modal__label1">S</label>
+			<input type="radio" id="modal__radio2" name="modal__radio" class="modal__radio2">
+			<label for="modal__radio2" class="modal__label modal__label2">М</label>
+			<input type="radio" id="modal__radio3" name="modal__radio" class="modal__radio3">
+			<label for="modal__radio3" class="modal__label modal__label3">L</label>
 		</div>
 		<a href="#" class="modal__make-order">Добавить</a>
-		<button class="modal__close" type="button"></button>
 	</section>
 
-	<!--liveReload-->
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script type="text/javascript" src="js/modal_menu.js"></script>
 </body>
 </html>
