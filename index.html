@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HTML Academy: Мишка</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -27,7 +28,7 @@
 					<span class="main-nav__heading main-nav__item--tablet-hidden">Поиск по сайту</span>
 				</a>
 				<a href="#" class="main-nav__item main-nav__item--mobile main-nav__cart">
-					<svg class="main-nav__cart-icon" width="60px" height="59.62px">
+					<svg class="main-nav__cart-icon" width="20.294px" height="18.849px">
 						<use xlink:href="img/sprite.svg#cart-icon"></use>
 					</svg>
 					Корзина: пока пуста
@@ -151,7 +152,7 @@
 			<table class="information__table">
 				<tr class="information-table__row information-table__row1">
 					<td class="information-table__col1">e-mail:</td>
-					<td class="information-table__col2">info@mimimishkashop.ru</td>
+					<td class="information-table__col2"><a href="#" class="information__mail">info@mimimishkashop.ru</a></td>
 				</tr>
 				<tr class="information-table__row information-table__row2">
 					<td class="information-table__col1">адрес:</td>
@@ -169,15 +170,29 @@
 		</section>
 	</main>
 	<footer class="main-footer">
-		<section class="main-footer__social">
-			<a href="#" class="main-footer__vk"><!--SVG--></a>
-			<a href="#" class="main-footer__fb"><!--SVG--></a>
-			<a href="#" class="main-footer__twitter"><!--SVG--></a>
+		<section class="main-footer__social container">
+			<a href="#" class="main-footer__insta main-footer__social-item">
+				<svg class="main-footer__insta-icon main-footer__item-icon" width="21.769px" height="21.334px">
+					<use xlink:href="img/sprite.svg#insta-icon"></use>
+				</svg>
+			</a>
+			<a href="#" class="main-footer__fb main-footer__social-item">
+				<svg class="main-footer__fb-icon main-footer__item-icon" width="14.962px" height="27.718px">
+					<use xlink:href="img/sprite.svg#fb-icon"></use>
+				</svg>
+			</a>
+			<a href="#" class="main-footer__twitter main-footer__social-item">
+				<svg class="main-footer__twitter-icon main-footer__item-icon" width="23.494px" height="20.168px">
+					<use xlink:href="img/sprite.svg#twitter-icon"></use>
+				</svg>
+			</a>
 		</section>
-		<section class="main-footer__developer">
-			<a href="#" class="developer">
-				Разработано
-				<!--SVG-->
+		<section class="main-footer__developer container">
+			<a href="#" class="main-footer__developer-link">
+				<span class="main-footer__developer-text">Разработано</span>
+				<svg class="main-footer__developer-icon" width="26.943px" height="34.09px">
+					<use xlink:href="img/sprite.svg#htmlacademy-icon"></use>
+				</svg>
 			</a>
 		</section>
 	</footer>
