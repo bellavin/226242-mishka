@@ -1,0 +1,43 @@
+.main-form__description-text
+	font-size: 13px;
+	line-height: 24px;
+	margin-top: 22px;
+	width: 260px;
+
+.main-form___filter
+	margin-top: 20px;
+
+.main-form__heading
+	position: relative;
+
+.main-form__heading::before
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 12px;
+	display: block;
+	width: 200px;
+	height: 1px;
+	background-color: #62d1ba;
+
+.main-form__radio
+	display: none;
+
+.main-form__radio-label
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+
+.main-form__radio-label::before
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	border: 10px solid white;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0 0 0 2px black;
+
+.main-form__radio[id="main-form__radio1"]:checked ~ .main-form__radio-label1::before,
+.main-form__radio[id="main-form__radio2"]:checked ~ .main-form__radio-label2::before
+	background-color: #62d1ba;
