@@ -7,13 +7,6 @@
 	overflow: hidden;
 	line-height: 30px;
 
-.main-heading__index-bcg-img
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	// margin-left: -287.5px;
-
 .main-heading
 	position: relative;
 	z-index: 50;
@@ -27,18 +20,14 @@
 	text-align: center;
 
 .main-heading--index
-	background-color: transparent;
 	padding-top: 70px;
 	padding-bottom: 123px;
-
+	background-image: url("../img/hero-mobile@1x.jpg");
+	background-position: center -16px;
+	background-repeat: no-repeat;
+	background-size: 220%;
 
 @media (min-width: $tablet-width)
-	.main-heading__index-bcg-img
-		position: absolute;
-		top: 0;
-		left: 50%;
-		margin-left: -287.5px;
-
 	.main-heading
 		width: 668px;
 		padding-top: 35px;
@@ -50,6 +39,9 @@
 	.main-heading--index
 		padding-top: 95px;
 		padding-bottom: 373px;
+		background-position: center -57px;
+		background-image: url("../img/hero-tablet@1x.jpg");
+		background-size: 172%;
 
 @media (min-width: $desktop-width - 100px)
 	.main-heading
@@ -60,3 +52,6 @@
 
 	.main-heading--index
 		padding-bottom: 359px;
+		background-position: center -99px;
+		background-image: url("../img/hero-desktop@1x.jpg");
+		background-size: 179%;
